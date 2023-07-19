@@ -1,0 +1,15 @@
+.bar{
+    text-align: right;
+    margin-top: 5px;
+    background-color: rgba(165, 160, 168, 0.339);
+    padding: 20px;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    padding: 20px;
+}
+a:hover{
+    background-color: rgba(165, 151, 174, 0.339);
+    border-radius: 5px;
+}

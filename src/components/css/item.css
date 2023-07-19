@@ -1,0 +1,43 @@
+.quantity button{
+    padding: 2px;
+    border: none;
+    border-radius: 5px;
+}
+.quantity{
+    text-align: center;
+}
+.top{
+    display: flex;
+    justify-content: center;
+}
+.cart1{
+    background-color: rgb(203, 212, 221);
+}
+img{
+    border-radius: 40px;
+}
+.quantity-btn {
+    margin-top: 2px;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .buy{
+    background-color: rgb(160, 168, 176);
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  .buy button{
+    cursor: pointer;
+    border-radius: 5px;
+    border:none;
+  }
+  .quantity button:hover{
+    background-color: rgb(196, 152, 148);
+  }

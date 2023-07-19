@@ -1,0 +1,29 @@
+.cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: rgb(203, 212, 221);;
+    margin: 10px 10px;
+}
+
+.cartbutton,
+.price {
+    display: flex;
+    align-items: center;
+}
+.btn {
+    margin: 5px 5px;
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.cartbutton{
+    margin-right: 40px;
+}
+.order{
+    text-align: center;
+}

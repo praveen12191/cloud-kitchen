@@ -1,37 +1,46 @@
-import { useContext } from "react"
-import { context } from "../App"
+import { useContext, useState } from "react"
 import "./css/cart.css"
-
-const Cart = () => {
+import axios from "axios"
+import { Context } from "./navbar"
+const Cart = ({name,price,count,total,setTotal}) => {
+ 
+    
     const fun1=()=>
     {
-        val==0 ? setval(0) : setval(val-1)
+        if(val==0)
+        {
+            setval(0)
+        }
+        else
+        {
+            setval(val-1)
+            setTotal(total-price)
+        }
+        
     }
     const fun2=()=>
     {
         setval(val+1)
+        setTotal(total+price)
     }
-    const {val,setval} = useContext(context)
+    const [val,setval] = useState(count)
     return ( 
         <div>
-            <div className="cart">
-                <div className="content">
-                    <p>Name of the dish</p>
-                    <p>$200</p>
+                <div className="cart">
+                    <div className="content">
+                        <p>{name}</p>
+                        <p>$:{price}</p>
+                    </div>
+                    <div className="cartbutton">
+                        <button onClick={fun1} class="btn">-</button>
+                        <span>{val}</span>
+                        <button onClick={fun2} class="btn">+</button>
+                    </div>
+                    <div className="price">
+                        <p>{price*val}</p>
+                    </div>
                 </div>
-                <div className="cartbutton">
-                    <button onClick={fun1}class="btn">-</button>
-                    <span >{val}</span>
-                    <button onClick={fun2} class="btn">+</button>
-                </div>
-                <div className="price">
-                    <p>{val*100}</p>
-                </div>
-            </div>
-            <div className="order">
-                    <p>Place a order</p>
-                </div>
-        </div>
+                    </div>
      );
 }
  

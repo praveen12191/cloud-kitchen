@@ -4,7 +4,7 @@
     justify-content: space-between;
     padding: 30px;
     border-radius: 30px;
-    background-color: rgb(203, 212, 221);;
+    background-color: rgb(203, 212, 221);
     margin: 10px 10px;
 }
 
@@ -26,4 +26,19 @@
 }
 .order{
     text-align: center;
+}
+.payTop{
+    display: flex;
+    justify-content: center;
+}
+.pay{
+    background-color: rgb(203, 212, 221);
+    padding: 1px;
+    width: 10%;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.pay:hover{
+    background-color: rgb(193, 207, 222);
 }

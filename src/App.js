@@ -7,11 +7,11 @@ import Register from './components/register';
 import Item from './components/item';
 import { createContext, useState } from 'react';
 import Cart from './components/cart';
+import DisplayItems from './components/displayItem';
+import DisplayCart from './components/displayCart';
 
-export const context = createContext()
 function App() {
-  const [val,setval] = useState(0);
-
+  const [items,setitems] = useState([])
   return (
     <div>
       <BrowserRouter>
@@ -19,12 +19,11 @@ function App() {
           <Route path="/" element={<Navbar></Navbar>}>
             <Route path="/login" element={<Login></Login>}></Route>
             <Route path="/register" element={<Register></Register>}></Route>
+            <Route path="/items" element={<DisplayItems></DisplayItems>}></Route>
+            <Route path="/cart" element={<DisplayCart></DisplayCart>}></Route>
           </Route>
         </Routes>
       </BrowserRouter>
-      <context.Provider value={{val,setval}}>
-        <Cart></Cart>
-    </context.Provider>
     </div>
   );
 }

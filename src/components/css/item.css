@@ -9,9 +9,11 @@
 .top{
     display: flex;
     justify-content: center;
+    padding: 50px;
 }
 .cart1{
     background-color: rgb(203, 212, 221);
+    padding: 20px;
 }
 img{
     border-radius: 40px;

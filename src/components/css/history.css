@@ -1,0 +1,14 @@
+.history{
+    background-color: rgb(217, 223, 238);
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    height: 50%;
+}
+.historyTop{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
